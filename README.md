@@ -22,6 +22,7 @@ This repository currently includes **Milestone 1 deliverables**.
 The repository is organized as follows:
 
 ```
+Data
 ├── Cleaned Data                 # Processed datasets after cleaning
 │   ├── Cleaned_Dataset1.csv
 │   ├── Cleaned_Dataset2.csv
