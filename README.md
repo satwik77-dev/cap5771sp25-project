@@ -45,7 +45,7 @@ Data
 
 ---
 
-## ** Milestone 1: Data Collection, Preprocessing & EDA**
+##  Milestone 1: Data Collection, Preprocessing & EDA
 ### **✔️ Tasks Completed**
 ✅ **Data Collection**  
 - Acquired **three datasets** relevant to mental health chatbot development:
