@@ -1,121 +1,137 @@
-# **AI Mental Health Chatbot**
-
-A conversational AI chatbot designed to provide **Mental health support**, answer queries, and analyze user sentiment using NLP and machine learning techniques. The chatbot leverages real-world counseling conversations, a mental health FAQ base, and sentiment-tagged statements to generate relevant, empathetic responses.
+Here is the complete, professional `README.md` file for your **Mental Health Support Chatbot** project — ready to be copy-pasted into your repo:
 
 ---
 
-## **Project Overview**
+```markdown
+# 🧠 Mental Health Support Chatbot
 
-This project aims to build an **AI-powered mental health chatbot** capable of:
-
-- **Understanding user intent** (emotional support, general queries, or FAQs).
-- **Predicting mental health labels** using sentiment cues in text.
-- **Providing context-aware responses** based on input and classification.
-
-The system is built using a combination of **classification models**, **text preprocessing pipelines**, and **feature-engineering strategies**, organized over three structured milestones.
+A supervised **AI-powered mental health chatbot** designed to offer emotionally supportive and informative responses based on real-world counseling, FAQs, and sentiment-labeled data. This conversational agent combines **Machine Learning (for Intent Prediction)** and **Transformer-based Language Models (for Response Generation)** to understand user input and generate meaningful replies in real-time.
 
 ---
 
-## **📌 Milestones**
+## 📌 Project Objective
 
-The project follows a staged CRISP-DM inspired structure:
-
-1️⃣ **Milestone 1: Data Collection, Cleaning, & Exploratory Data Analysis (Completed)**  
-2️⃣ **Milestone 2: Feature Engineering, Feature Selection, Classification Modeling (Completed)**  
-3️⃣ **Milestone 3: Chatbot Integration, Evaluation, Deployment & Final Report (⏳ Due April 23)**  
+To build a hybrid NLP-based chatbot that:
+- **Classifies user intent** (e.g., emotional support, FAQ, or general counseling),
+- **Generates human-like responses** using `facebook/blenderbot-400M-distill` (local LLM),
+- And provides an interactive, multi-turn conversational experience via Gradio.
 
 ---
 
-## **📁 Project Structure**
+## 🧰 Tech Stack
+
+| Layer            | Tools & Libraries |
+|------------------|------------------|
+| Language         | Python 3.10       |
+| NLP & ML         | Scikit-learn, Transformers (HuggingFace), Blenderbot |
+| Data Handling    | Pandas, NumPy, Regex |
+| Visualization    | Matplotlib, Seaborn, WordCloud |
+| Deployment       | Gradio |
+| Version Control  | Git + GitHub |
+| Report Writing   | Overleaf / MS Word, PowerPoint |
+
+---
+
+## 🗃️ Datasets Used
+
+1. **Mental Health Counseling Conversations**  
+   - [Hugging Face](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)  
+   - Real user-therapist interactions.
+
+2. **Mental Health FAQ**  
+   - [Kaggle](https://www.kaggle.com/datasets/narendrageek/mental-health-faq-for-chatbot)  
+   - Expert responses to commonly asked mental health questions.
+
+3. **Sentiment-Labeled Mental Health Posts**  
+   - [Kaggle](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health)  
+   - Emotional states of users (depression, anxiety, suicidal thoughts, etc.)
+
+All datasets were cleaned, normalized, and **merged into a unified modeling dataset**.
+
+---
+
+## 🏗️ Chatbot Workflow
+
+1. **User Input** (via Gradio UI)
+2. **Intent Prediction** using Random Forest on TF-IDF features.
+3. **Response Generation** using Blenderbot (locally loaded from Hugging Face).
+4. **Chat History Maintained** (Multi-turn conversation).
+5. **Displayed Results**:
+   - User Message
+   - Predicted Intent
+   - Bot's Response
+
+---
+
+## 🚀 How to Run the Chatbot
+
+### 🔧 Prerequisites
+
+- Python ≥ 3.10
+- Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### ▶️ Run the Gradio App
 
 ```bash
+python chatbot_app.py
+```
+
+> ✅ To generate a **public link**, make sure `share=True` is set in `demo.launch()` inside `chatbot_app.py`.
+
+---
+
+## 📂 Project Structure
+
+```
 cap5771sp25-project/
-│
-├── Data/
-│   ├── Raw Data/                     # Original source datasets
-│   │   ├── Mental_Health_FAQ.csv
-│   │   ├── Mental_health_counseling_conversations.csv
-│   │   └── Sentiment_Analysis.csv
-│   │
-│   ├── Cleaned Data/                # Preprocessed datasets for modeling
-│       ├── Cleaned_Counseling_Conversations.csv
-│       ├── Cleaned_Mental_Health_FAQ.csv
-│       ├── Cleaned_Sentiment_Analysis.csv
-│       ├── Modeling_Dataset.csv
-│       └── Modeling_Dataset_Enriched.csv
-│
-├── Scripts/
-│   ├── Preprocessing.ipynb                # Initial text cleaning steps
-│   ├── EDA.ipynb                          # Visualizations, word distributions
-│   ├── FeatureEngineeringSelection.ipynb  # Engineered features, correlation analysis
-│   └── ModelTraining.ipynb                # Intent & Label classification models
-│
+├── Models/                 # Original ML models & vectorizers
+├── BestModels/             # Retrained, final models used in chatbot
+├── Cleaned Data/           # Cleaned datasets (1, 2, 3)
 ├── Reports/
-│   ├── Milestone1.pdf                     # Report on Data & EDA
-│   └── Milestone2.pdf                     # Report on Modeling & Feature Engineering
-│
-└── README.md
+│   ├── Milestone1.pdf
+│   ├── Milestone2.pdf
+│   └── Milestone3.pdf      # Final report
+├── Scripts/
+│   ├── chatbot_app.py      # Final Gradio-based chatbot
+│   ├── preprocessing.ipynb
+│   ├── feature_engineering.ipynb
+│   └── model_training.ipynb
+├── README.md               # This file
+└── requirements.txt        # All dependencies
 ```
 
 ---
 
-## ✅ **Milestone 2: Feature Engineering & Modeling**
+## 🎥 Tool Demo
 
-### Tasks Completed:
-
-- **Unified the three datasets** with appropriate intent/label annotations.
-- **Created engineered features** like `Statement_Word_Count`, `Has_Severe_Keyword`, `Question_Word_Count`, etc.
-- **Handled null values** using intent-specific filtering and smart exclusion.
-- **Visualized key insights** to validate feature relevance (e.g., skewed input lengths, label imbalance).
-- **Trained 5 ML models** across two classification tasks:
-  - Intent Classifier (Logistic Regression, Naive Bayes, Random Forest)
-  - Label Classifier (Logistic Regression, Random Forest per intent)
-- **Justified feature inclusion/exclusion** based on correlation and relevance.
-- **Evaluated models** using accuracy and macro F1-score.
-
-📄 All documentation and analysis is compiled in `Reports/Milestone2.pdf`.
+Watch our full working **demo video** here:  
+**[👉 Tool Demo Video Link]** *(Replace with your video URL)*
 
 ---
 
-## 🔁 How to Reproduce
+## 📊 Project Milestones
 
-###  1. Setup Environment
-
-```bash
-pip install pandas numpy matplotlib seaborn nltk scikit-learn
-```
-
-###  2. Run Preprocessing
-
-```bash
-# Open and run all cells in
-Scripts/Preprocessing.ipynb
-```
-
-### 📊 3. Visualize EDA
-
-```bash
-# Run
-Scripts/EDA.ipynb
-```
-
-### ⚙️ 4. Feature Engineering & Selection
-
-```bash
-# Run
-Scripts/FeatureEngineeringSelection.ipynb
-```
-
-### 🤖 5. Train ML Models
-
-```bash
-# Train and evaluate all classifiers via
-Scripts/ModelTraining.ipynb
-```
+| Milestone | Deliverable |
+|----------|-------------|
+| **M1**   | Data collection, cleaning, and EDA |
+| **M2**   | Feature engineering & ML model training |
+| **M3**   | Final evaluation, deployment via Gradio UI |
 
 ---
 
-## 👨‍💻 Contributor
+## 👨‍💻 Contributors
 
-- **Sai Satwik Yarapothini** – NLP Developer, Data Science Lead  
-- **GitHub:** [satwik77-dev](https://github.com/satwik77-dev)
+**Sai Satwik Yarapothini**  
+Master's in Applied Data Science  
+University of Florida  
+
+---
+
+## 📄 License
+
+This project is for academic and non-commercial research use only. All datasets are publicly available and permitted for academic use via their respective licenses.
+
+```
