@@ -28,7 +28,9 @@ The deployed chatbot includes:
 
 **Final Gradio Interface:**
 
-![Final Chatbot Interface Screenshot](<https://uflorida-my.sharepoint.com/:i:/g/personal/saisatwi_yarapot_ufl_edu/EdqyTWeMErdBg-dpUAwqq9IBvxuNNTNESJDqRnJJ4TqACQ?e=AcMMY2>)
+This is my Final Gradio Chatbot UI :
+![Screenshot 2025-04-26 at 11 02 37 AM](https://github.com/user-attachments/assets/c19f5568-c2b4-4fb3-97aa-5e35d83e8e41)
+
 
 
 ## 🎥 Tool Demo Video
