@@ -87,7 +87,6 @@ University of Florida
 ## 📚 References
 
 - [Facebook Blenderbot 400M-distill - Hugging Face](https://huggingface.co/facebook/blenderbot-400M-distill)
-- [Hugging Face Datasets](https://huggingface.co/datasets)
 - [scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Gradio Documentation](https://gradio.app/)
 - [Transformers Library - Hugging Face](https://huggingface.co/docs/transformers/index)
