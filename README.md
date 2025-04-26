@@ -61,25 +61,38 @@ cap5771sp25-project/
 │
 ├── Data/
 │   ├── Cleaned Data/
+│   │   ├── Cleaned_Counseling_Conversations.csv
+│   │   ├── Cleaned_Mental_Health_FAQ.csv
+│   │   ├── Cleaned_Sentiment_Analysis.csv
+│   │   ├── Modeling_Dataset.csv
+│   │   ├── Modeling_Dataset_Enriched.csv   #Final Unified Dataset
+│   │
 │   ├── Raw Data/
+│       ├── Mental_Health_FAQ.csv
+│       ├── Mental_health_counseling_conversations.csv
+│       ├── Sentiment_Analysis.csv
 │
-├── Models/
-│   ├── intent_classifier_random_forest.pkl
-│   ├── vectorizer_intent.pkl
+├── Presentation/
+│   ├── MentalHealthChatbot.mp4          # Final Presentation Video
+│   ├── MentalHealthChatbotM1andM2.pptx   # Final Project Presentation Slides
 │
 ├── Reports/
 │   ├── Milestone1.pdf
 │   ├── Milestone2.pdf
-│   ├── Milestone3.pdf
+│   ├── Milestone3.pdf       # Final Report
 │
 ├── Scripts/
-│   ├── Chatbot.ipynb
+│   ├── Chatbot.ipynb      #Chatbot Development Code
 │   ├── EDA.ipynb
 │   ├── FeatureEngineeringSelection.ipynb
 │   ├── ModelTrainingandChatbotBuilding.ipynb
 │   ├── Preprocessing.ipynb
 │
+├── ToolDemoVideo/
+│   ├── ToolDemoVideo.mp4     # Tool Demo Video
+│
 ├── README.md
+
 ```
 
 ## 💻 How to Run this Project Locally
