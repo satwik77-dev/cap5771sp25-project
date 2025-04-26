@@ -6,7 +6,6 @@
 
 To develop an **Empathetic Conversational chatbot** for mental health support that classifies user intent and generates context-aware responses using a trained machine learning model and a lightweight local LLM (Blenderbot-400M-distill).
 
----
 
 ## Project Architecture
 
@@ -17,7 +16,7 @@ To develop an **Empathetic Conversational chatbot** for mental health support th
 - **Frontend**:
   - Built using Gradio for a user-friendly chat interface with memory support.
 
----
+
 
 ## 🚀 Chatbot Deployment (Gradio App)
 
@@ -31,7 +30,6 @@ The deployed chatbot includes:
 
 ![Final Chatbot Interface Screenshot](<https://uflorida-my.sharepoint.com/:i:/g/personal/saisatwi_yarapot_ufl_edu/EdqyTWeMErdBg-dpUAwqq9IBvxuNNTNESJDqRnJJ4TqACQ?e=AcMMY2>)
 
----
 
 ## 🎥 Tool Demo Video
 
@@ -50,7 +48,7 @@ The deployed chatbot includes:
 - [🔗 Final Presentation Slides](<https://uflorida-my.sharepoint.com/:b:/g/personal/saisatwi_yarapot_ufl_edu/EY9Fd1NM8LZAjFy77nXF2twBXOSobYLi6gI1kk-2NqHDVQ?e=9u3vHh>)
 - [🔗 Final Presentation Video](<https://uflorida-my.sharepoint.com/:v:/g/personal/saisatwi_yarapot_ufl_edu/EZl-x3fJZDlBhsfjjJoSvBIBAq6vJ7VrdP5kLmfiW9VpDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KTNNtS>)
 
----
+
 
 ## 💻 How to Run this Project Locally
 
@@ -75,7 +73,6 @@ Follow these simple steps:
 
 > **Note**: First time running will automatically download Blenderbot-400M-distill from HuggingFace.
 
----
 
 ## 👨‍💻 Developed By
 
@@ -83,7 +80,6 @@ Follow these simple steps:
 Masters in Applied Data Science
 University of Florida
 
----
 
 ## 📚 References
 
