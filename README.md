@@ -1,121 +1,92 @@
-# **AI Mental Health Chatbot**
-
-A conversational AI chatbot designed to provide **Mental health support**, answer queries, and analyze user sentiment using NLP and machine learning techniques. The chatbot leverages real-world counseling conversations, a mental health FAQ base, and sentiment-tagged statements to generate relevant, empathetic responses.
+# 🧠 AI Powered Mental Health Chatbot
 
 ---
 
-## **Project Overview**
+## Objective of the Project
 
-This project aims to build an **AI-powered mental health chatbot** capable of:
+To develop an **Empathetic Conversational chatbot** for mental health support that classifies user intent and generates context-aware responses using a trained machine learning model and a lightweight local LLM (Blenderbot-400M-distill).
 
-- **Understanding user intent** (emotional support, general queries, or FAQs).
-- **Predicting mental health labels** using sentiment cues in text.
-- **Providing context-aware responses** based on input and classification.
 
-The system is built using a combination of **classification models**, **text preprocessing pipelines**, and **feature-engineering strategies**, organized over three structured milestones.
+## Project Architecture
 
----
+- **Intent Classification**:
+  - Trained Random Forest Classifier using TF-IDF vectorized input and additional features like Statement Word Count and Question Word Count.
+- **Response Generation**:
+  - Local deployment of Blenderbot-400M-distill model for generating empathetic multi-turn replies.
+- **Frontend**:
+  - Built using Gradio for a user-friendly chat interface with memory support.
 
-## **📌 Milestones**
 
-The project follows a staged CRISP-DM inspired structure:
 
-1️⃣ **Milestone 1: Data Collection, Cleaning, & Exploratory Data Analysis (Completed)**  
-2️⃣ **Milestone 2: Feature Engineering, Feature Selection, Classification Modeling (Completed)**  
-3️⃣ **Milestone 3: Chatbot Integration, Evaluation, Deployment & Final Report (⏳ Due April 23)**  
+## 🚀 Chatbot Deployment (Gradio App)
 
----
+The deployed chatbot includes:
+- Textbox for user input.
+- Multi-turn conversation history display.
+- Predicted Intent Display.
+- Submit and Clear buttons for smooth interaction.
 
-## **📁 Project Structure**
+**Final Gradio Interface:**
 
-```bash
-cap5771sp25-project/
-│
-├── Data/
-│   ├── Raw Data/                     # Original source datasets
-│   │   ├── Mental_Health_FAQ.csv
-│   │   ├── Mental_health_counseling_conversations.csv
-│   │   └── Sentiment_Analysis.csv
-│   │
-│   ├── Cleaned Data/                # Preprocessed datasets for modeling
-│       ├── Cleaned_Counseling_Conversations.csv
-│       ├── Cleaned_Mental_Health_FAQ.csv
-│       ├── Cleaned_Sentiment_Analysis.csv
-│       ├── Modeling_Dataset.csv
-│       └── Modeling_Dataset_Enriched.csv
-│
-├── Scripts/
-│   ├── Preprocessing.ipynb                # Initial text cleaning steps
-│   ├── EDA.ipynb                          # Visualizations, word distributions
-│   ├── FeatureEngineeringSelection.ipynb  # Engineered features, correlation analysis
-│   └── ModelTraining.ipynb                # Intent & Label classification models
-│
-├── Reports/
-│   ├── Milestone1.pdf                     # Report on Data & EDA
-│   └── Milestone2.pdf                     # Report on Modeling & Feature Engineering
-│
-└── README.md
-```
+This is my Final Gradio Chatbot UI :
+![Screenshot 2025-04-26 at 11 02 37 AM](https://github.com/user-attachments/assets/c19f5568-c2b4-4fb3-97aa-5e35d83e8e41)
+
+
+
+## 🎥 Tool Demo Video
+
+- [🔗 Click Here to Watch My Tool Demo](<https://uflorida-my.sharepoint.com/:v:/g/personal/saisatwi_yarapot_ufl_edu/EQMQR4tGWeJGvpG1WqFHU_8BLsqAbkafEIzoEja5TLv3Mw>)
 
 ---
 
-## ✅ **Milestone 2: Feature Engineering & Modeling**
+## 📝 Final Report
 
-### Tasks Completed:
-
-- **Unified the three datasets** with appropriate intent/label annotations.
-- **Created engineered features** like `Statement_Word_Count`, `Has_Severe_Keyword`, `Question_Word_Count`, etc.
-- **Handled null values** using intent-specific filtering and smart exclusion.
-- **Visualized key insights** to validate feature relevance (e.g., skewed input lengths, label imbalance).
-- **Trained 5 ML models** across two classification tasks:
-  - Intent Classifier (Logistic Regression, Naive Bayes, Random Forest)
-  - Label Classifier (Logistic Regression, Random Forest per intent)
-- **Justified feature inclusion/exclusion** based on correlation and relevance.
-- **Evaluated models** using accuracy and macro F1-score.
-
-📄 All documentation and analysis is compiled in `Reports/Milestone2.pdf`.
+- [🔗 Click Here to Access Final Milestone Report](<https://uflorida-my.sharepoint.com/:b:/g/personal/saisatwi_yarapot_ufl_edu/EUsF1gLClfZIvX8rZYo-EdIBN51b3Q6GgyeWSpTM_ZZUIw?e=oPgPUe>)
 
 ---
 
-## 🔁 How to Reproduce
+## 🎤 Final Presentation & Video
 
-###  1. Setup Environment
+- [🔗 Final Presentation Slides](<https://uflorida-my.sharepoint.com/:b:/g/personal/saisatwi_yarapot_ufl_edu/EY9Fd1NM8LZAjFy77nXF2twBXOSobYLi6gI1kk-2NqHDVQ?e=9u3vHh>)
+- [🔗 Final Presentation Video](<https://uflorida-my.sharepoint.com/:v:/g/personal/saisatwi_yarapot_ufl_edu/EZl-x3fJZDlBhsfjjJoSvBIBAq6vJ7VrdP5kLmfiW9VpDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KTNNtS>)
 
-```bash
-pip install pandas numpy matplotlib seaborn nltk scikit-learn
-```
 
-###  2. Run Preprocessing
 
-```bash
-# Open and run all cells in
-Scripts/Preprocessing.ipynb
-```
+## 💻 How to Run this Project Locally
 
-### 📊 3. Visualize EDA
+Follow these simple steps:
 
-```bash
-# Run
-Scripts/EDA.ipynb
-```
+1. **Clone the Repository**
+   ```bash
+   git clone <https://github.com/satwik77-dev/cap5771sp25-project>
+   ```
 
-### ⚙️ 4. Feature Engineering & Selection
+2. **Install Required Libraries**
+   ```bash
+   pip install pandas scikit-learn transformers gradio
+   ```
 
-```bash
-# Run
-Scripts/FeatureEngineeringSelection.ipynb
-```
+3. **Run the Gradio Chatbot App**
+   ```bash
+   python chatbot_app.py
+   ```
 
-### 🤖 5. Train ML Models
+4. Open the Gradio link in your browser to use the chatbot.
 
-```bash
-# Train and evaluate all classifiers via
-Scripts/ModelTraining.ipynb
-```
+> **Note**: First time running will automatically download Blenderbot-400M-distill from HuggingFace.
 
----
 
-## 👨‍💻 Contributor
+## 👨‍💻 Developed By
 
-- **Sai Satwik Yarapothini** – NLP Developer, Data Science Lead  
-- **GitHub:** [satwik77-dev](https://github.com/satwik77-dev)
+**Sai Satwik Yarapothini**  
+Masters in Applied Data Science  
+University of Florida
+
+
+
+## 📚 References
+
+- [Facebook Blenderbot 400M-distill - Hugging Face](https://huggingface.co/facebook/blenderbot-400M-distill)
+- [scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Gradio Documentation](https://gradio.app/)
+- [Transformers Library - Hugging Face](https://huggingface.co/docs/transformers/index)
