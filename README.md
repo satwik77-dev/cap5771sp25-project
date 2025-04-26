@@ -78,9 +78,10 @@ Follow these simple steps:
 
 ## 👨‍💻 Developed By
 
-**Sai Satwik Yarapothini**
-Masters in Applied Data Science
+**Sai Satwik Yarapothini**  
+Masters in Applied Data Science  
 University of Florida
+
 
 
 ## 📚 References
