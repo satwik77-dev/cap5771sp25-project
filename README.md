@@ -51,6 +51,36 @@ This is my Final Gradio Chatbot UI :
 - [🔗 Final Presentation Video](<https://uflorida-my.sharepoint.com/:v:/g/personal/saisatwi_yarapot_ufl_edu/EZl-x3fJZDlBhsfjjJoSvBIBAq6vJ7VrdP5kLmfiW9VpDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KTNNtS>)
 
 
+## 🗂️ Project Directory Structure
+
+```
+cap5771sp25-project/
+├── BestModels/
+│   ├── intent_classifier_random_forest.pkl
+│   ├── vectorizer_intent.pkl
+│
+├── Data/
+│   ├── Cleaned Data/
+│   ├── Raw Data/
+│
+├── Models/
+│   ├── intent_classifier_random_forest.pkl
+│   ├── vectorizer_intent.pkl
+│
+├── Reports/
+│   ├── Milestone1.pdf
+│   ├── Milestone2.pdf
+│   ├── Milestone3.pdf
+│
+├── Scripts/
+│   ├── Chatbot.ipynb
+│   ├── EDA.ipynb
+│   ├── FeatureEngineeringSelection.ipynb
+│   ├── ModelTrainingandChatbotBuilding.ipynb
+│   ├── Preprocessing.ipynb
+│
+├── README.md
+```
 
 ## 💻 How to Run this Project Locally
 
